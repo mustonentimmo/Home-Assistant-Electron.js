@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home assistant</title>
+
+    <script>
+    
+        var $ = jQuery = require("jquery");
+       
+    </script>
+     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">  
+</head>
+<body onload=''>
+
+    <h1 class="Title">Home Assistant</h1>
+
+    <div class="btn-container">
+        <div class="btn">
+            <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="btn">
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="btn">
+            <i class="fas fa-snowflake"></i>
+        </div>
+        <div class="btn" id='webOS'>
+            <i class="fas fa-tv" id='webOS' onclick=""></i>
+            <span class="indicator dot" title="Connected"></span>
+            <h4 class="deviceName"></h4>
+        </div>
+    
+       
+    </div>
+
+    <div class="webOSPanel" style="display:none">
+        <div id="volumeDial">
+            <button class="dial"></button>
+        </div>
+
+        <div class="shutDown btn">
+            <i class="fas fa-power-off"></i>
+        </div>
+
+        <div class="volumeOff btn">
+            <i class="fas fa-volume-off"></i>
+        </div>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+
+    <a class="close fas fa-times fa-2x"></a>
+    <a class="back fas fa-ellipsis-h fa-2x"></a>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='../index.js'></script>
+    <script src="https://rawcdn.githack.com/aterrien/jQuery-Knob/755309e933d326ffaa5a2d758dc377147b766515/js/jquery.knob.js"></script>
+    <script src="../Animations/closeWindow.js"></script>
+    <script src='../Functions/webOS.js'></script>
+</body>
+</html>

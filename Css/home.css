@@ -1,0 +1,151 @@
+body {
+    background-color: #FCFBFC; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow:auto;
+    height: 100vh;
+    margin: 0;
+}
+
+.btn-container {
+    display: flex;
+
+}
+
+.btn {
+    background-color: #FCFBFC;
+    height: 80px;
+    width: 80px;    
+    margin: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 400ms;
+    box-shadow: 7px 7px 15px #e9e9e9, -4px -4px 13px #ffffff, inset 4px 4px 8px #f5f5f5d3, inset -8px -8px 8px #f8f8f8fb;
+    border: 1px solid rgba(235, 235, 235, 0.541)
+}
+
+.btn i {
+    font-size: 40px;
+    transition: all 400ms;
+    color: #2727272c;
+    
+} 
+
+.btn:hover i{
+    transform: scale(0.96);
+}
+
+.btn:hover{
+    box-shadow: 4px 2px 18px rgb(236, 236, 236), -4px -4px 13px rgb(250, 250, 250), 
+    inset 6px 6px 16px rgba(179, 179, 179, 0.253), 
+    inset -8px -8px 8px rgba(219, 219, 219, 0.027);
+
+    transform: translateY(2px);
+}
+
+.close {
+    position: absolute;
+    transition: all 400ms;
+    right: 32px;
+    top: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(0.8)
+  }
+
+
+  .back {
+    position: absolute;
+    display: none;
+    transition: all 400ms;
+    left: 32px;
+    top: 32px;
+    opacity: 0.3;
+  }
+
+  .back:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: rotate(-360deg);
+  }
+
+  .dot {
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border-radius: 50%;
+    display: none;
+  }
+
+  .indicator {
+    position: absolute;
+    transition: all 400ms;
+    margin-top: 41px;
+  }
+
+  .indicator:hover{
+    transform: scale(0.80);
+  }
+
+  .deviceName {
+    color: rgba(46, 46, 46, 0.322) !important;
+    position: absolute;
+    margin-top: 70px;
+    font-size: 15px;
+  }
+
+.Title {
+  color: #1a1a1aa2 !important;
+  position: absolute; 
+  top: 87px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+
+}
+
+.alert{
+  position: absolute;
+  bottom: 100px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+;
+/*WebOS controller ⚛ */
+
+.webOSPanel {
+  width: 500px;
+  height: 300px;
+}
+
+.shutDown {
+  position: absolute;
+  left: 200px;
+  top: 260px;
+}
+
+.volumeOff {
+  position: absolute;
+  right: 200px;
+  top: 260px;
+}
+
+.fa-power-off {
+  color: #e74d3ca8 !important;
+  opacity: 0.8;
+}
+
+
+.volumeDial {
+  top: 100px;
+  box-shadow: 7px 7px 15px #e9e9e9, -4px -4px 13px #ffffff, inset 4px 4px 8px #f5f5f5d3, inset -8px -8px 8px #f8f8f8fb !important
+}
