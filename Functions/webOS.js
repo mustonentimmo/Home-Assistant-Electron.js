@@ -50,8 +50,6 @@ $('.dial').knob({
         'width': 150,
         'height': 150,
         'displayInput': true,
-        'fgColor': '#1abc9c',
-        'bgColor': 'rgb(224, 224, 224)',
         'font': 'Montserrat',
         'fontWeight': '600',
         'data-angleOffSet': 90,
